@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+.honey {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  transform: perspective(900px) rotateY(45deg);
+  transition: 1.5s;
+}
+.honey:hover {
+  transform: perspective(900px) rotateY(0deg);
+}
+.item {
+  width: 140px;
+  height: 145px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+}
+.item:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.comb_1 {
+  margin-top: 36px;
+}
+.comb_2,
+.comb_3 {
+  grid-template-columns: repeat(4, 195px);
+}
+.comb_4 {
+  justify-content: center;
+}
