@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masking the Image</title>
+    <style>
+      main {
+        width: 60vw;
+        height: 45vh;
+        margin: auto;
+        padding-top: 250px;
+        background-image: url("./images/sea_1-removebg-preview.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        mask-image: url("./images/2013-bullet-classic-enfield-wallpaper-preview-removebg-preview\ \(1\).png");
+        mask-repeat: no-repeat;
+        mask-position: center;
+      }
+      h1 {
+        height: fit-content;
+        width: fit-content;
+        background: linear-gradient(
+          to right,
+          rgb(109, 205, 49),
+          rgb(0, 119, 255),
+          rgba(212, 232, 218, 0)
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Masking the image</h1>
+    </header>
+    <main></main>
+  </body>
+</html>
