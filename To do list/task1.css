@@ -1,0 +1,61 @@
+h1 {
+  margin: 0%;
+  text-shadow: 2px 2px 12px #0ca1a3;
+  text-align: center;
+  color: rgb(228, 80, 80);
+  padding-bottom: 12px;
+}
+.container2 {
+  margin-top: 42px;
+}
+
+.contain3 {
+  padding: 10px 60px 10px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+input::placeholder {
+  font-size: 20px;
+}
+.contain4 {
+  padding: 20px;
+  margin: 25px;
+  border: 2px SOLID black;
+}
+nav ul li {
+  display: inline;
+}
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding-right: 22px;
+  color: rgb(127, 26, 140);
+  font-size: 20px;
+}
+span {
+  padding: 40px;
+  margin: 5px;
+  margin-left: 60px;
+  font-size: 25px;
+}
+.botton {
+  margin: 5px;
+  border: 100px;
+  font-size: 25px;
+  background-color: #06a83d;
+  color: white;
+  margin-left: 670px;
+}
+.contain4a {
+  border: 2px solid;
+  padding: 20px;
+}
+.contain4b {
+  border: 2px solid;
+  padding: 20px;
+}
+.contain4c {
+  border: 2px solid;
+  padding: 20px;
+}
