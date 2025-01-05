@@ -1,0 +1,104 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0%;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 900;
+}
+span {
+  color: #3e1010f7;
+  font-weight: 900;
+}
+.box1 {
+  background-color: lightgreen;
+  border-width: 2px;
+  border-style: dashed;
+  opacity: 0.5;
+  height: 19%;
+  width: 95%;
+  position: relative;
+  margin: 5px;
+  z-index: 9;
+}
+.box2 {
+  background-color: lightgreen;
+  opacity: 0.5;
+  height: 19%;
+  width: 95%;
+  margin-top: 2px;
+  border-width: 2px;
+  border-style: dashed;
+  margin: 5px;
+  position: absolute;
+  top: 70%;
+  z-index: 1;
+}
+.box3 {
+  background-color: rgb(201, 119, 119);
+  opacity: 0.4;
+  height: 80%;
+  width: 64%;
+  margin-top: 2px;
+  border-width: 2px;
+  border-style: dashed;
+  position: relative;
+  bottom: 15%;
+  left: 30%;
+  position: relative;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box4 {
+  background-color: yellow;
+  opacity: 0.3;
+  height: 15%;
+  width: 57%;
+  margin-top: 2px;
+  border-width: 2px;
+  border-style: dashed;
+  position: absolute;
+  bottom: 73%;
+  left: 33%;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.box5 {
+  background-color: yellow;
+  opacity: 0.7;
+  height: 15%;
+  width: 57%;
+  margin-top: 2px;
+  border-width: 2px;
+  border-style: dashed;
+  position: absolute;
+  bottom: 20%;
+  left: 33%;
+  z-index: 2;
+}
+.box6 {
+  background-color: rgb(178, 126, 226);
+  opacity: 0.8;
+  height: 59%;
+  width: 29%;
+  margin-top: 2px;
+  border-width: 2px;
+  border-style: dashed;
+  position: absolute;
+  bottom: 25%;
+  left: 57%;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
