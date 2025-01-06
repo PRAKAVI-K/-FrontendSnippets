@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        background-image: url(img3.avif);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      header h1 {
+        text-align: center;
+        padding: 32px;
+        color: rgb(160, 55, 127);
+      }
+      span h1 {
+        color: rgb(94, 11, 114);
+      }
+
+      span h2 {
+        color: rgb(94, 11, 114);
+      }
+      h2 {
+        margin-bottom: 30px;
+      }
+
+      #form {
+        width: fit-content;
+        margin: 60px auto;
+        padding: 30px 52px;
+        border-radius: 12px;
+        background-color: rgb(225, 212, 223, 0.4);
+        border: 2px solid gray;
+        text-align: center;
+      }
+
+      input {
+        margin-bottom: 15px;
+        padding: 9px;
+        border-radius: 12px;
+        text-align: center;
+        border: 1px solid gray;
+      }
+
+      center {
+        text-align: center;
+      }
+      button {
+        border-radius: 12px;
+        padding: 3px;
+        font-weight: 600;
+      }
+      h1:hover {
+        color: rgb(88, 50, 97);
+      }
+      /* .inputc:hover {
+        padding: 10px;
+
+        border: 2px solid black;
+      } */
+      input.inputc:hover {
+        transform: scale(1.2);
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>ELITE PATHWAY</h1></header>
+    <form action="index.html" method="get" id="form">
+      <h2>LOGIN</h2>
+
+      <input
+        type="text"
+        placeholder=" Enter your Username"
+        name="Username"
+        class="inputc"
+        pattern="[A-Za-z@#$%&*]{3,}"
+        required
+      /><br /><br />
+
+      <input
+        type="password"
+        placeholder=" Enter your Password"
+        name="Password"
+        class="inputc"
+        pattern="[A-Z][A-z@#$%&.*!0-9]{8,}"
+        required
+      /><br /><br />
+
+      <input
+        type="email"
+        name="email"
+        class="inputc"
+        placeholder="Enter your Email Id"
+        pattern="[a-z0-9@#$%^.&*]+@gmail\.com$"
+        title="Valid Email Pattern abc@gmail.com"
+        required
+      /><br /><br />
+      <input type="submit" class="inputc" /><br /><br />
+      <a href="index.html">Sign In?</a>
+    </form>
+    <!-- <script>
+      let arr = [200, 3, 4, 5, 78];
+      //  let arr2 =arr.sort()
+      //   console.log(arr2);
+      arr.sort((c, d) => {
+        return c - d;
+      });
+      console.log(arr);
+    </script> -->
+  </body>
+</html>
