@@ -6,6 +6,7 @@
   --secondfont-hover: #a27732;
   --title-color: #4e9dd3;
   --hover-color: #5f1d5f;
+  --clear-color: rgb(249, 245, 245);
 }
 * {
   margin: unset;
@@ -26,46 +27,95 @@ body {
 }
 #sidebar {
   box-sizing: border-box;
-  height: 100vh;
+  height: fit-content;
   width: 250px;
   padding: 5px 1em;
   background-color: rgb(205, 232, 242);
   color: var(--secondfont-color);
-  position:sticky;
+  position: sticky;
   top: unset;
   align-self: start;
 }
-#sidebar ul{
+#sidebar ul {
   list-style-type: none;
 }
 #sidebar > ul > li:first-child {
   display: flex;
   justify-content: flex-end;
 }
-#sidebar ul li .active   {
+#sidebar ul li .active {
   color: var(--secondfont-color);
 }
 i {
   margin: 10px;
   color: var(--font-color);
 }
-#sidebar a, #sidebar .dropdown-btn, #sidebar .logo{
-  border-radius: .5em;
-  padding:.85em;
+#sidebar a,
+#sidebar .dropdown-btn,
+#sidebar .logo {
+  border-radius: 0.5em;
+  padding: 0.85em;
   text-decoration: none;
-  color:var(--hover-color);
+  color: var(--hover-color);
   display: flex;
   align-items: center;
-  gap:1em;
-} 
-.dropdown-btn{
+  gap: 1em;
+}
+.dropdown-btn {
   /* width: 100%; */
   text-align: left;
   background: none;
   border: none;
-  font:inherit;
+  font: inherit;
   cursor: pointer;
 }
+#sidebar span,
+#sidebar .dropdown-btn span {
+  flex-grow: 1;
+}
+#sidebar a:hover,
+#sidebar .dropdown-btn :hover {
+  background-color: var(--clear-color);
+}
+#sidebar .sub-menu{
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 300ms ease-in-out;
+  >div{
+    overflow: hidden;
+  }
+}
+#sidebar .sub-menu.show{
+ grid-template-rows: 1fr;
+}
+.dropdown-btn i{
+  transition: 200ms ease;
+}
+.rotate i:last-child{
+  rotate: 180deg
+}
+#sidebar .sub-menu a{
+  padding-left: 2em;
+}
+.toggle-btn{
+  margin-left: auto;
+  padding: 1em;
+  border: none;
+  border-radius: .5em;
+  background: none;
+  cursor: pointer;
+}
+i{
+  transition: rotate 150ms ease;
+}
+.toggle-btn:hover{
+  background-color: var(--clear-color);
+}
+
+
+
+
+
 main {
   padding: min(30px, 7%);
 }
@@ -84,3 +134,4 @@ h2,
 p {
   margin-top: 1 em;
 }
+
